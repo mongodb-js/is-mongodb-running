@@ -1,7 +1,4 @@
-# is-mongodb-running
-
-[![build status](https://secure.travis-ci.org/mongodb-js/is-mongodb-running.png)](http://travis-ci.org/mongodb-js/is-mongodb-running)
-[![Gitter](https://img.shields.io/badge/gitter-mongodb--js%2Fis-mongodb-running-brightgreen.svg)](https://gitter.im/mongodb-js/is-mongodb-running)
+# is-mongodb-running [![travis][travis_img]][travis_url] [![npm][npm_img]][npm_url]
 
 > Is MongoDB running?  What port is it using?
 
@@ -63,3 +60,8 @@ require('is-mongodb-running')(function(err, res){
 ## License
 
 Apache 2
+
+[travis_img]: https://img.shields.io/travis/mongodb-js/is-mongodb-running.svg
+[travis_url]: https://travis-ci.org/mongodb-js/is-mongodb-running
+[npm_img]: https://img.shields.io/npm/v/is-mongodb-running.svg
+[npm_url]: https://npmjs.org/package/is-mongodb-running
