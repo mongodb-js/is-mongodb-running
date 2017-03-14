@@ -14,7 +14,7 @@ npm install -g is-mongodb-running;
 is-mongodb-running;
 >>> ✔  Yep! 1 MongoDB instance(s) running:
 >>>   1. port 27017 with pid 22873
-kill -9 22873;
+kill 22873;
 is-mongodb-running;
 >>> ☹ No MongoDB instances running
 ```
