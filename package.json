@@ -22,6 +22,7 @@
     "figures": "^1.4.0",
     "lodash": "^3.10.1",
     "lsof": "^0.1.0",
+    "node-netstat": "^1.4.2",
     "minimist": "^1.2.0",
     "ps-node": "0.0.5"
   },
