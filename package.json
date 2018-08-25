@@ -24,7 +24,7 @@
     "lsof": "^0.1.0",
     "node-netstat": "^1.4.2",
     "minimist": "^1.2.0",
-    "ps-node": "0.0.5"
+    "ps-node": "^0.1.6"
   },
   "devDependencies": {
     "eslint-config-mongodb-js": "^2.3.0",
