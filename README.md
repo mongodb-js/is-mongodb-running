@@ -57,6 +57,17 @@ require('is-mongodb-running')(function(err, res){
 });
 ```
 
+or, with promises:
+
+```javascript
+require('is-mongodb-running/promise').then(function(res) {
+  console.log(res);
+  // >>> [{pid: <12345>, port: 27017}]
+}).catch(function(err){
+  return console.error(err);
+});
+```
+
 ## License
 
 Apache 2
