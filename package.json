@@ -34,7 +34,7 @@
     "mongodb-js-precommit": "^1.0.1",
     "pre-commit": "^1.1.1"
   },
-  "license": "Apache 2",
+  "license": "Apache-2.0",
   "precommit": [
     "check"
   ]
