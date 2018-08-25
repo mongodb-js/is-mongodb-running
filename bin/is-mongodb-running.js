@@ -14,7 +14,7 @@ var args = require('minimist')(process.argv.slice(2), {
 if (args.debug) {
   process.env.DEBUG = 'is-mongodb-running';
 }
-var lookup = require('../');
+var lookup = require('../promise');
 var pkg = require('../package.json');
 
 if (args.help || args.h) {
