@@ -14,7 +14,7 @@ var args = require('minimist')(process.argv.slice(2), {
 if (args.debug) {
   process.env.DEBUG = 'is-mongodb-running';
 }
-var lookup = require('../');
+var lookup = require('../promise');
 var pkg = require('../package.json');
 
 if (args.help || args.h) {
@@ -26,16 +26,7 @@ if (args.version) {
   process.exit(1);
 }
 
-lookup(args, function(err, res) {
-  if (err) {
-    if (args.json) {
-      err = JSON.stringify(err, null, 2);
-    }
-    console.error(chalk.red(figures.cross), err.message); // eslint-disable-line no-console
-    console.error(chalk.gray(err.stack)); // eslint-disable-line no-console
-    process.exit(1);
-    return;
-  }
+lookup.then(function(res) {
   if (args.json) {
     console.log(JSON.stringify(res, null, 2)); // eslint-disable-line no-console
   } else {
@@ -53,4 +44,11 @@ lookup(args, function(err, res) {
         chalk.bold(d.pid));
     });
   }
+}).catch(function(err) {
+  if (args.json) {
+    err = JSON.stringify(err, null, 2);
+  }
+  console.error(chalk.red(figures.cross), err.message); // eslint-disable-line no-console
+  console.error(chalk.gray(err.stack)); // eslint-disable-line no-console
+  process.exit(1);
 });
