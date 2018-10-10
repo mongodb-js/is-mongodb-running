@@ -4,3 +4,6 @@ npm-debug.log
 
 # visual studio code
 .vscode
+
+# Ignore the package-lock file
+package-lock.json
