@@ -1,7 +1,7 @@
 {
   "name": "is-mongodb-running",
   "description": "Is MongoDB running?  What port is it using?",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "check": "mongodb-js-precommit",
     "test": "mocha"
