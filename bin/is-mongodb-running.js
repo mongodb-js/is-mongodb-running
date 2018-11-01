@@ -37,7 +37,7 @@ lookup.then(function(res) {
     console.log(chalk.green(figures.tick), // eslint-disable-line no-console
       ' Yep!', res.length, 'MongoDB instance(s) running:');
     res.map(function(d, i) {
-      console.log('  ', i + 1 + '.',  // eslint-disable-line no-console
+      console.log('  ', i + 1 + '.', // eslint-disable-line no-console
         'port',
         chalk.bold(d.port),
         'with pid',
