@@ -26,7 +26,7 @@ if (args.version) {
   process.exit(1);
 }
 
-lookup.then(function(res) {
+lookup(args).then(function(res) {
   if (args.json) {
     console.log(JSON.stringify(res, null, 2)); // eslint-disable-line no-console
   } else {
